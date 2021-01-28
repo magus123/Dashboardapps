@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>RTGS Dashboard</title>
+	<meta charset="UTF-8">
+
+    <link href="./vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+    <style>
+        body {
+          color: #333;
+          background: transparent;
+        }
+        
+        .frame {
+          width: 15%;
+          border-radius: 4px;
+          background: #ededed;
+          padding: 10px;
+          margin-left: 400px;
+        }
+        
+        body .frame .content h1 {
+          margin: 0 0 10px 0;
+          text-align: center;
+          color: white;
+          font-weight: 100;
+          text-transform: uppercase;
+        }
+        
+        #svg {
+          width: 500px;
+          height: 300px;
+        }
+
+        #svg2 {
+          width: 500px;
+          height: 300px;
+        }
+        
+        .content { text-align: center; }
+        </style>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;" >
+
+        <nav class="navbar navbar-default" role="navigation" style="background-color: blue;" >
+            <div class="container">
+                <div class="navbar-header">
+                    <a id="menu-toggle" href="#" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    </a>
+                      <a class="navbar-brand" href="HomeMenu.html"  style="color:rgb(252, 255, 249)">
+                        R T G S
+                      </a>
+                </div>
+              </div>
+        </nav>
+
+
+            <div>
+              <div class="content" style="color: blue;">
+                <h1> Incoming </h1>
+
+                <h5 style="color:darkgrey"> RTGS Incoming Status </h1>
+                <svg id="svg"></svg> </div>
+            </div>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+            <script src='http://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script> 
+            <script>
+            var RTGSDATAINGOING = [
+                {
+                    value: 57,
+                    label: 'CPAK',
+                    color: '#87CEFA'
+                },
+                {
+                    value: 23,
+                    label: 'PANT',
+                    color: '#9932CC'
+                },
+                {
+                    value: 20,
+                    label: 'RTNT',
+                    color: '#FFDEAD'
+                },
+            ];
+            </script> 
+            <script src="svg-donut-chart-framework.js"></script>
+            <script type="text/javascript">
+        </script>
+
+<div class="container">
+    <div class="row">
+      <div class="col-2" style="margin-right: 100px; background-color: lightgray; ">
+        <p style="font-size:13px;">
+            <span style="font-family:'Arial', sans-serif;font-weight:400;">TOTAL </span>
+            <span style="font-family:'Arial Bold', 'Arial', sans-serif;font-weight:700;font-size:16px;">1869</span>
+        </p><p style="font-size:13px;"><span style="font-family:'Arial Bold', 'Arial', sans-serif;font-weight:700;">
+        </span></p><p style="font-size:13px;"><span style="font-family:'Arial Bold', 'Arial', sans-serif;font-weight:700;">Rp. 194.621.141.031.362</span></p>
+      </div>
+      <div class="col-2" style="margin-right: 100px; background-color: lightgray;">
+        <p><span>1866 sesuai SLA (99%)</span></p>
+        <p><span>3 diatas SLA (0.16%)</span></p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- batasdouble -->
+  <div>
+    <div class="content">
+      <h1>RTGS Outgoing Status </h1>
+      <svg id="svg2"></svg> </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script> 
+
+  <script>
+  var RTGSOutgoing = [
+      {
+          value: 57,
+          label: 'Approve',
+          color: '#87CEFA'
+      },
+      {
+          value: 43,
+          label: 'Reject',
+          color: '#9932CC'
+      },
+  ];
+  </script> 
+
+  <script src="svg-donut-chart-outgoing.js"></script>
+  <script type="text/javascript"></script>
+
+<div class="container">
+<div class="row">
+<div class="col-2"  style="margin-right: 100px; background-color: lightgray; ">
+<p style="font-size:13px;">
+  <span style="font-family:'Arial', sans-serif;font-weight:400;">TOTAL </span>
+  <span style="font-family:'Arial Bold', 'Arial', sans-serif;font-weight:700;font-size:16px;">1869</span>
+</p><p style="font-size:13px;"><span style="font-family:'Arial Bold', 'Arial', sans-serif;font-weight:700;">
+</span></p><p style="font-size:13px;"><span style="font-family:'Arial Bold', 'Arial', sans-serif;font-weight:700;">Rp. 194.621.141.031.362</span></p>
+</div>
+<div class="col-2"  style="margin-right: 100px; background-color: lightgray; ">
+<p><span>1866 sesuai SLA (99%)</span></p>
+<p><span>3 diatas SLA (0.16%)</span></p>
+</div>
+</div>
+</div>
+</div>
+
+ 
+</body>
+</head>
+</html> 
